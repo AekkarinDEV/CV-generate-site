@@ -1,14 +1,16 @@
-function Contactlist(props){
-    console.log(props);
-    let contype = Object.keys(props);
-    let conlist = Object.values(props);
-    console.log(conlist);
-    console.log(contype);
+import { useContext } from "react"
+import { AppContext } from "../App"
+
+
+function Contactlist(){
+   const context = useContext(AppContext)
+   const conlist = [context.contacts.tel,context.contacts.email,context.contacts.web,context.contacts.locate]
+   const contype = ["tel","email","website","address"]
     return(
         <ul className="contact_list">
-           {contype.map((type,index)=>{
-                if(conlist[index] != ''){
-                    switch(type){
+           {conlist.map((type,index)=>{
+                if(type!= ''){
+                    switch(contype[index]){
                         case 'tel':
                             return (<li key={type}><i className="fa-solid fa-phone"></i><p>{conlist[index]}</p></li>)
                         case 'email':

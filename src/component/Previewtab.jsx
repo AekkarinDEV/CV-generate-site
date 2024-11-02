@@ -20,8 +20,7 @@ function Cvpaper(){
                 
             </div>
             <div className="right_panel">
-                <NameAndProfile name={"OLIVIA RODIGO"} profession={"Graphics Designer"}
-                profile={"Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum"}/>
+                <NameAndProfile/>
                 <Work/>
                 <Reference/>
             </div>

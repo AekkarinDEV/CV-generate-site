@@ -178,6 +178,7 @@ table {
     font-weight: 700;
     font-size: xx-large;
     padding-top: 24px;
+    max-width:200px;
   }
   h4{
     font-weight: 400;
@@ -301,4 +302,8 @@ table {
       }
     }
   }
+}
+
+.side_tab{
+  background-color: #fbfbfb;
 }

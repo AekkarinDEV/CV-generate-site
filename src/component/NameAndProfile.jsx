@@ -1,7 +1,7 @@
-import { useContext, useState } from "react"
+import { useContext} from "react"
 import { AppContext } from "../App";
 
-function NameAndProfile({name, profession, profile}) {
+function NameAndProfile() {
  const contect = useContext(AppContext);
   return (
     <div className="NandP">

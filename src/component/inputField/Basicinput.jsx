@@ -44,14 +44,19 @@ function Basicinput() {
               <input type="text" id="user_role" placeholder="graphic designer" onChange={roleChange}/>
               <label htmlFor="user_profile">Profile</label>
               <textarea id="user_profile" onChange={profileChange} rows={6}/>
-              <label htmlFor="user_tel">Phone Number</label>
-              <input type="text" id="user_tel" onChange={cantactsChange}/>
-              <label htmlFor="user_email">Email</label>
-              <input type="text" id="user_email" onChange={cantactsChange}/>
-              <label htmlFor="user_web">Your Website</label>
-              <input type="text" id="user_web" onChange={cantactsChange}/>
-              <label htmlFor="user_adress">Your Address</label>
-              <input type="text" id="user_address" onChange={cantactsChange}/>
+              
+              
+              <div className="contact_input">
+                <label htmlFor="user_tel">Phone Number</label>
+                <label htmlFor="user_email">Email</label>
+                <input type="text" id="user_tel" onChange={cantactsChange}/>
+                <input type="text" id="user_email" onChange={cantactsChange}/>
+                <label htmlFor="user_web">Your Website</label>
+                <label htmlFor="user_adress">Your Address</label>
+                <input type="text" id="user_web" onChange={cantactsChange}/>
+                <input type="text" id="user_address" onChange={cantactsChange}/>
+              </div>
+              
         </form>
   )
 }

@@ -1,4 +1,7 @@
-function EducationData({facility, school, start,end}){
+import { useContext} from "react"
+import { AppContext } from "../App"
+
+function EducationData({facility,school,start,end}){
     return(
         <div className="edu_item">
             <h5>{facility}</h5>
@@ -9,14 +12,12 @@ function EducationData({facility, school, start,end}){
 }
 
 function Education() {
+  const context = useContext(AppContext)
   return (
     <div className="education_label">
         <h1 className="label_head">Education</h1>
-        <EducationData facility={"Bacholor of Design"} school={"khonkaen university"}
-        start={2008} end={2012}/>
-        <EducationData facility={"Bacholor of Design"} school={"khonkaen university"}
-        start={2008} end={2012}/>
-       
+        <EducationData facility={context.education[0].facility} school={context.education[0].school}
+        start={context.education[0].start} end={context.education[0].end}/>
     </div>
   )
 }
